@@ -1,11 +1,10 @@
 Package: itseries
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Irregular Times Series
 Version: 0.1.0
 Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Maintainer: The package maintainer <wilmar.sepulveda@correounivalle.edu.co>
+Description: This is an package yo handle irregularly spaced time series.
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
