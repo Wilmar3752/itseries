@@ -41,3 +41,9 @@ calc_xhat <- function(x, phi) {
   x_hat[2:n] <- sign(phi) * abs(phi)^(delta_n) * x$x[1:(n - 1)]
   return(x_hat)
 }
+
+iar_loglik <- function(x, phi) {
+  w <- calc_w_fit(x, phi)
+  ll <- (1 / 2) * sum(log(w))
+  return(ll)
+}
