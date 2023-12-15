@@ -14,7 +14,7 @@ library(itseries)
 delta_n <- 1+rexp(100, rate = 2)  ## Simulate irregular Delta_n
 t_n <- diffinv(delta_n, xi = 1) ## Get tick times from delta_n
 sim_data <- iar_sim(t_n, phi = -0.3)
-plot.its(sim_data$x, sim_data$t_n)
+plot_its(sim_data$x, sim_data$t_n)
 
 ```
 ## Fit the MLE for te IAR model
