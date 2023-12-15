@@ -1,4 +1,4 @@
-q#' Perform Maximum Likelihood Estimation for the Infinite Autoregressive (IAR) model
+#' Perform Maximum Likelihood Estimation for the Infinite Autoregressive (IAR) model
 #'
 #' This function performs maximum likelihood estimation for the IAR model using the specified likelihood function and optimization method.
 #'
@@ -18,7 +18,7 @@ q#' Perform Maximum Likelihood Estimation for the Infinite Autoregressive (IAR) 
 #' @export
 #'
 #' @keywords maximum likelihood estimation, IAR model, optimization
-iar.mle <- function(par = 0,
+iar_mle <- function(par = 0,
                     fn = iar_loglik, data,
                     hessian = TRUE,
                     method = "Brent") {

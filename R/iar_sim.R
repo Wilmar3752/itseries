@@ -11,12 +11,12 @@
 #' @examples
 #' t_n <- 1:10
 #' sim_data <- iar.sim(t_n)
-#' 
+#'
 #' @importFrom stats rnorm
 #' @export
 #'
 #' @keywords time series, simulation, IAR model
-iar.sim <- function(t_n, phi = 0.7, sigma = 1) {
+iar_sim <- function(t_n, phi = 0.7, sigma = 1) {
   n_sim <- length(t_n)
   e <- rnorm(n_sim)
   x <- rep(0, n_sim)
